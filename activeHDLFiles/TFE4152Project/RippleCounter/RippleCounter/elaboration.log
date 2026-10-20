@@ -1,12 +1,16 @@
-Active-HDL 17.0.292.10043 2026-10-20 13:02:36
+Active-HDL 17.0.292.10043 2026-10-20 16:01:13
 
 Elaboration top modules:
-Verilog Module                clockedInverter
+Verilog Module                \10BitRippleCounter\\ \
 
 
 --------------------------------------------------------------------------------------------------
 Verilog Module          | Library       | Info | Compiler Version           | Compilation Options
 --------------------------------------------------------------------------------------------------
+\10BitRippleCounter\\ \ | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+TFF                     | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+DFF                     | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+trnsGate                | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 clockedInverter         | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 --------------------------------------------------------------------------------------------------
 
@@ -15,3 +19,9 @@ Library                 | Comment
 --------------------------------------------------------------------------------------------------
 RippleCounter           | None
 --------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +access +r +access +r+w \10BitRippleCounter\\ \
+
+
+The performance of simulation is reduced. Version Student Edition

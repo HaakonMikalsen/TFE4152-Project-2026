@@ -1,3 +1,5 @@
 i<>.\src\trnsGate.v
 i<>.\src\DFF.v
 i<>.\src\clockedInverter.v
+i<>.\src\TFF.v
+i<>.\src\10BitRippleCounter.v

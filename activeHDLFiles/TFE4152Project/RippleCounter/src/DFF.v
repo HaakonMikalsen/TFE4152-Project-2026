@@ -44,8 +44,44 @@ wire Q_N;
 //}} End of automatically maintained section
 
 
-nmos nmos1(Q, D, CLK);
-pmos pmos1(Q, D, CLK_N);
 
+wire Q1; 
+
+trnsGate trnsG1(
+	.EN(CLK_N),
+	.EN_N(CLK),
+	.D(D),
+	.Q(Q1)
+);
+
+wire Q1_R;
+nand nand1(Q1_R, Q1, R);
+
+clockedInverter cI1(
+	.CLK(CLK),
+	.CLK_N(CLK_N),
+	.D(Q1_R),
+	.Q(Q1)
+
+);	
+
+
+trnsGate trnsG2(
+	.EN(CLK),
+	.EN_N(CLK_N),
+	.D(Q1_R),
+	.Q(Q_N)
+); 
+
+
+nor nor1(Q, Q_N, R_N);
+
+clockedInverter cI2(
+	.CLK(CLK_N),
+	.CLK_N(CLK),
+	.D(Q),
+	.Q(Q_N)
+
+);
 
 endmodule

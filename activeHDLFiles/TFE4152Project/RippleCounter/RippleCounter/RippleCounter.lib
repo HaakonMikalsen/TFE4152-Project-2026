@@ -1,36 +1,41 @@
-timestamp=1792494153689
+timestamp=1792504868409
 
 [~A]
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/10BitRippleCounter.v=0*171436*172150
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/5BitRippleCounter.v=0*39068*39749
-C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DFF.v=0*64280*64867
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DFF.v=0*153497*154244
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DFlipFlop.v=0*35707*36396
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DFlipFlop.v_TFlipFlop.v_DLatch.v=0*4877*5795
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DFlipFlop.v_TFlipFlop.v_DLatch.v_5BitRippleCounter.v=0*60283*61510
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/DLatch.v=0*46207*46893
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/TFF.v=0*164382*164969
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/TFlipFlop.v=0*47942*48519
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/clockedInverter.v=0*77354*77985
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v=0*72342*72886
-LastVerilogToplevel=clockedInverter
-ModifyID=48
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v=0*114868*115852
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v=0*162187*163273
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v=0*188262*189610
+LastVerilogToplevel=\10BitRippleCounter\\ \
+ModifyID=102
 Version=74
 
 [~MFT]
-0=6|0RippleCounter.mgf|77985|42133
-1=4|1RippleCounter.mgf|120650|116190
-3=8|3RippleCounter.mgf|24862|22893
+0=10|0RippleCounter.mgf|189610|111014
+1=12|1RippleCounter.mgf|292356|284398
+3=24|3RippleCounter.mgf|57606|55150
 
 [$root]
-A/$root=22|||1*120244
-BinW64/$root=3*24538
-SLP=3*24653
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c92165e302a9ad2e8d8ea434123e0c8a36310
+A/$root=22|||1*286197
+BinW64/$root=3*56334
+SLP=3*56449
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c921676448ffc32a577ddc424902dfcda520f
 
 [DFF]
-A/DFF=22|../src/DFF.v|27|1*107795
-BinW64/DFF=3*21244
+A/DFF=22|../src/DFF.v|27|1*287623
+BinW64/DFF=3*56766
 R=../src/DFF.v|27
-SLP=3*21357
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|44300fc340e3bc7a054c52d81b175af6c99ba2da7c74ee4c21cc634336236205
+SLP=3*56879
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|44300fc340e3bc7a054c52d81b175af62bc2c90f97ab42af523e3762f31ac7b1
 
 [DFlipFlop]
 BinW64/DFlipFlop=3*19408
@@ -57,34 +62,50 @@ R=../src/5BitRippleCounter.v|27
 SLP=3*20475
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|6bc7c6833bc082b0e88f8696770291aef23a9d1daecc045d91849ae092a1d32f66e73c376ab10f85f5958541717b13b0
 
+[TFF]
+A/TFF=22|../src/TFF.v|27|1*291249
+BinW64/TFF=3*57248
+R=../src/TFF.v|27
+SLP=3*57361
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|2622aa158ee4e9853a9e4894b563d2d521e8a62c1ff5fbd42838c2ae3839cfda
+
 [TFlipFlop]
 BinW64/TFlipFlop=3*19889
 R=../src/TFlipFlop.v|27
 SLP=3*20008
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|05e72ff4eac59bec0c0e17248c2655b5a30025de53f2eeed202138bbfcd65f14468ab4c864dab4eee08b907981818ea5
 
+[\10BitRippleCounter\\ \]
+A/\10BitRippleCounter\\ \=22|../src/10BitRippleCounter.v|27|1*292356
+BinW64/\10BitRippleCounter\\ \=3*57473
+R=../src/10BitRippleCounter.v|27
+SLP=3*57606
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|40002b05f4715cc6536e83afbe87c3be5909e784f6d56d919c71f1608d8044ad26527262ddaa47cb266f3a3c4d9b973a27037334c8e907f1106903aa51c4663d
+
 [clockedInverter]
-A/clockedInverter=22|../src/clockedInverter.v|27|1*120650
-BinW64/clockedInverter=3*24737
+A/clockedInverter=22|../src/clockedInverter.v|27|1*289464
+BinW64/clockedInverter=3*56994
 R=../src/clockedInverter.v|27
-SLP=3*24862
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|78ab036b9e2c902ebb805a5e05589f435f73427f9a1950982c5ea50fbd28d5fd7c7b6ae85f1d8efa8b9e0c09860abc99
+SLP=3*57119
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|78ab036b9e2c902ebb805a5e05589f435f73427f9a1950982c5ea50fbd28d5fd8a379a7570eef15650fdb9971d24ca49
 
 [trnsGate]
-A/trnsGate=22|../src/trnsGate.v|27|1*115224
-BinW64/trnsGate=3*23399
+A/trnsGate=22|../src/trnsGate.v|27|1*286587
+BinW64/trnsGate=3*56533
 R=../src/trnsGate.v|27
-SLP=3*23517
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a126d65bb48cb4945d65d676e5892e67ac231554c83af0a541f45e3f1a4a8147fc4d4a9116d0c7fb8b1acea145910140
+SLP=3*56651
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a126d65bb48cb4945d65d676e5892e67ac231554c83af0a541f45e3f1a4a81473a0071d7c9f2b1dfe7ccec270a51d80e
 
 [~U]
-$root=12|0*76891|
-DFF=12|0*64069||0x10
+$root=12|0*186797|
+DFF=12|0*187276|
 DFlipFlop=12|0*59148|
 DLatch=12|0*59839|
 DLatchWRST=12|0*59388|
 RippleCounter=12|0*60039||0x10
+TFF=12|0*187741|
 TFlipFlop=12|0*59604|
-clockedInverter=12|0*77137||0x10
-trnsGate=12|0*72141||0x10
-                                                        
+\10BitRippleCounter\\ \=12|0*187983||0x10
+clockedInverter=12|0*187524|
+trnsGate=12|0*187075|
+                                                              
