@@ -1,0 +1,30 @@
+timestamp=1792482462090
+
+[~A]
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/DFlipFliop/src/DFlipFlop.v=0*373*979
+LastVerilogToplevel=DFlipFlop
+ModifyID=1
+Version=74
+
+[~MFT]
+0=4|0DFlipFliop.mgf|979|0
+1=2|1DFlipFliop.mgf|374|0
+3=4|3DFlipFliop.mgf|318|0
+
+[$root]
+A/$root=22|||1*0
+BinW64/$root=3*0
+SLP=3*115
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c9216840fd5d44c0f41a807218de6624638e6
+
+[DFlipFlop]
+A/DFlipFlop=22|../src/DFlipFlop.v|27|1*374
+BinW64/DFlipFlop=3*199
+R=../src/DFlipFlop.v|27
+SLP=3*318
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|b9e5bdbc6be884e6dd5ea3553fac4b2938a50803fe5860060bbfed0ef608750dd2b361c9a73ba32e2d42209e8b5b3550
+
+[~U]
+$root=12|0*0|
+DFlipFlop=12|0*166||0x10
+                                                  

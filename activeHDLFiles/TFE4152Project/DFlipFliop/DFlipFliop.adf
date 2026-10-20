@@ -1,0 +1,64 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=DFlipFliop
+[Library]
+DFlipFliop=.\DFlipFliop\DFlipFliop.lib
+[$LibMap$]
+DFlipFliop=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+[IMPLEMENTATION]
+UCF=
+[C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\DFlipFliop.adf]
+REFRESH_FLOW=1
+[Files]
+/DFlipFlop.v=-1
+[Files.Data]
+.\src\DFlipFlop.v=Verilog Source Code
+[folders]
+name0=ALINT-PRO Workspaces
+directory0=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension0=alintws
+name1=Coverage Databases
+directory1=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension1=acdb
+name2=Dll Libraries
+directory2=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension2=dll
+name3=Event Lists
+directory3=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension3=lst
+name4=HTML Files
+directory4=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension4=htm;html
+name5=Log Files
+directory5=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension5=log;htm;xml;txt
+name6=Matlab/Simulink Files
+directory6=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\
+extension6=m;mdl;slx
+name7=Memory Files
+directory7=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension7=mem;mif;hex
+name8=PDF Files
+directory8=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension8=pdf
+name9=Profiler Databases
+directory9=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension9=tbp
+name10=Script Files
+directory10=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension10=do;tcl;pl;py
+name11=Waveform Files
+directory11=C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\
+extension11=asdb;awc;asdbc;asdbe
+[C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\RippleCounter.adf]
+REFRESH_FLOW=1

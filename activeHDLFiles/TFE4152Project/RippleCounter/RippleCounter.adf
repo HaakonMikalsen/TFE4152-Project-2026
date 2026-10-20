@@ -1,0 +1,31 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=RippleCounter
+[Library]
+RippleCounter=.\RippleCounter\RippleCounter.lib
+[$LibMap$]
+RippleCounter=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+FLOWTOOLS=ONLY_IMPL
+REFRESH_FLOW=1
+[IMPLEMENTATION]
+UCF=
+[C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\RippleCounter.adf]
+REFRESH_FLOW=1
+[Files.Data]
+.\src\trnsGate.v=Verilog Source Code
+.\src\DFF.v=Verilog Source Code
+.\src\clockedInverter.v=Verilog Source Code
+.\src\trnsGate.v=Verilog Source Code
+[Files]
+/trnsGate.v=-1
+/DFF.v=-1
+/clockedInverter.v=-1
+/trnsGate.v=-1

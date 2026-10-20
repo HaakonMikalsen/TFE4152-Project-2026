@@ -1,0 +1,147 @@
+# Design: Design DFlipFliop already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+# Design: Design dflipfliop already active.
+# Error: VCP2000 DFlipFlop.v : (44, 5): Syntax error. Unexpected token: nand[_NAND].
+# Info: VCP2876 DFlipFlop.v : (44, 17): Implicit net declaration, symbol D_CLK has not been declared in module DFlipFlop.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# Design: Design dflipfliop already active.
+alog -O2 -sve -msg 5 -sv2k23 -work DFlipFliop $dsn/src/DFlipFlop.v
+# Unit top modules: DFlipFlop.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+DFlipFlop DFlipFlop
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.5 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.7 [s]
+# SLP: Finished : 2.2 [s]
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 7 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# KERNEL: SLP loading done - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4599 kB (elbread=427 elab2=4102 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\src\wave.asdb
+#  09:48, tirsdag 20. oktober 2026
+#  Simulation has been initialized
+# add wave -noreg {/DFlipFlop/D}
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/DFlipFliop/src/wave.asdb'.
+# add wave -noreg {/DFlipFlop/CLK}
+# VSIM: 1 object(s) traced.
+# add wave -noreg {/DFlipFlop/Q}
+# VSIM: 1 object(s) traced.
+# add wave -noreg {/DFlipFlop/Qinv}
+# VSIM: 1 object(s) traced.
+# KERNEL: Error: KERNEL_0166 "/DFlipFlop/D" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/DFlipFlop/D" with formula "0 0fs, 1 100ns -r 200ns".
+# KERNEL: Error: KERNEL_0166 "/DFlipFlop/CLK" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/DFlipFlop/CLK" with formula "0 0fs, 1 50ns -r 100ns".
+# KERNEL: Error: KERNEL_0166 "/DFlipFlop/CLK" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/DFlipFlop/CLK" with formula "0 0fs, 1 100ns -r 200ns".
+# KERNEL: Error: KERNEL_0166 "/DFlipFlop/CLK" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/DFlipFlop/CLK" with formula "0 0fs, 1 50ns -r 100ns".
+run @400ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w DFlipFlop
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 7 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5304 kB (elbread=427 elab2=4806 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  09:51, tirsdag 20. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/DFlipFliop/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 7 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5304 kB (elbread=427 elab2=4806 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\DFlipFliop\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  09:51, tirsdag 20. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/DFlipFliop/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @400ns
+# KERNEL: stopped at time: 400 ns
+endsim
+# VSIM: Simulation has finished.
+# Design: Design "DFlipFliop" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: 10:06, tirsdag 20. oktober 2026
+# Design: Opening design "C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\RippleCounter.adf"
+# Library Manager: Library "RippleCounter" attached.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "RippleCounter" has been set as active.
