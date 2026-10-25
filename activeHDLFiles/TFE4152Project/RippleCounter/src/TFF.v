@@ -41,6 +41,16 @@ wire Q_N;
 
 //}} End of automatically maintained section
 
+// STATIC
+DFFStatic DFF1(
+	.R_N(R_N),
+	.CLK_N(CLK_N),
+	.CLK(CLK),
+	.D(Q_N),
+	.Q(Q),
+	.Q_N(Q_N));
+/*
+// NOT STATIC
 DFF DFF1(
 	.R(R),
 	.R_N(R_N),
@@ -49,6 +59,7 @@ DFF DFF1(
 	.D(Q_N),
 	.Q(Q),
 	.Q_N(Q_N)
-);
+); 
+*/
 
 endmodule

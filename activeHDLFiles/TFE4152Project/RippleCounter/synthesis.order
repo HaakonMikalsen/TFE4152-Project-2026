@@ -3,3 +3,6 @@ i<>.\src\DFF.v
 i<>.\src\clockedInverter.v
 i<>.\src\TFF.v
 i<>.\src\10BitRippleCounter.v
+i<>.\src\DLatchStatic.v
+i<>.\src\DFFStatic.v
+i<>.\src\nand3.v

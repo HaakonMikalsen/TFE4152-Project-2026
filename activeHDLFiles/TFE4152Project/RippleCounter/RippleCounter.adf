@@ -24,6 +24,10 @@ REFRESH_FLOW=1
 .\src\DFF.v=Verilog Source Code
 .\src\clockedInverter.v=Verilog Source Code
 .\src\TFF.v=Verilog Source Code
+.\src\10BitRippleCounter.v=Verilog Source Code
+.\src\DLatchStatic.v=Verilog Source Code
+.\src\DFFStatic.v=Verilog Source Code
+.\src\nand3.v=Verilog Source Code
 .\src\TFF.v=Verilog Source Code
 .\src\10BitRippleCounter.v=Verilog Source Code
 [Files]
@@ -31,5 +35,13 @@ REFRESH_FLOW=1
 /DFF.v=-1
 /clockedInverter.v=-1
 /TFF.v=-1
+/10BitRippleCounter.v=-1
+/DLatchStatic.v=-1
+/DFFStatic.v=-1
+/nand3.v=-1
 /TFF.v=-1
 /10BitRippleCounter.v=-1
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

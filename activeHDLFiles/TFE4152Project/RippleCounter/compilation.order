@@ -3,3 +3,6 @@
 .\src\clockedInverter.v
 .\src\TFF.v
 .\src\10BitRippleCounter.v
+.\src\DLatchStatic.v
+.\src\DFFStatic.v
+.\src\nand3.v
