@@ -6,3 +6,8 @@ i<>.\src\10BitRippleCounter.v
 i<>.\src\DLatchStatic.v
 i<>.\src\DFFStatic.v
 i<>.\src\nand3.v
+i<>.\src\timer.v
+i<>.\src\comb.v
+i<>.\src\orWnand.v
+i<>.\src\stateMachine.v
+i<>.\src\fullSetup.v

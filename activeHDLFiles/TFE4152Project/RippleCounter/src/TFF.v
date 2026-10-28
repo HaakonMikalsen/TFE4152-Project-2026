@@ -49,7 +49,8 @@ DFFStatic DFF1(
 	.D(Q_N),
 	.Q(Q),
 	.Q_N(Q_N));
-/*
+
+/*	
 // NOT STATIC
 DFF DFF1(
 	.R(R),
@@ -61,5 +62,4 @@ DFF DFF1(
 	.Q_N(Q_N)
 ); 
 */
-
 endmodule

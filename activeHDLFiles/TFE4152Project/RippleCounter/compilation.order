@@ -6,3 +6,8 @@
 .\src\DLatchStatic.v
 .\src\DFFStatic.v
 .\src\nand3.v
+.\src\timer.v
+.\src\comb.v
+.\src\orWnand.v
+.\src\stateMachine.v
+.\src\fullSetup.v

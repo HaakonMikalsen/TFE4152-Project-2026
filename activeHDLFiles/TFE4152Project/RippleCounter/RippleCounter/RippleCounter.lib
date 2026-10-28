@@ -1,4 +1,4 @@
-timestamp=1792927764569
+timestamp=1793110831857
 
 [~A]
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/10BitRippleCounter.v=0*216614*217472
@@ -13,7 +13,10 @@ C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/Ripp
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/TFF.v=0*164382*164969
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/TFlipFlop.v=0*47942*48519
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/clockedInverter.v=0*77354*77985
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/comb.v=0*328586*329286
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/nand3.v=0*250783*251340
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/orWnand.v=0*300589*301132
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/timer.v=0*297067*297656
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v=0*72342*72886
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v=0*114868*115852
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v=0*162187*163273
@@ -21,21 +24,25 @@ C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/Ripp
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DDFStatic.v=0*227138*228802
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DDFStatic.v_DLatchStatic.v=0*235033*236808
 C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v=0*247713*249504
-C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v=0*278391*280302
-LastVerilogToplevel=\10BitRippleCounter\\ \
-ModifyID=130
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v=0*283264*285175
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v_timer.v=0*293666*295713
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v_timer.v_comb.v_orWnand.v=0*332775*335159
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v_timer.v_comb.v_orWnand.v_stateMachine.v=0*365684*368291
+C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/trnsGate.v_DFF.v_clockedInverter.v_TFF.v_10BitRippleCounter.v_DLatchStatic.v_DFFStatic.v_nand3.v_timer.v_comb.v_orWnand.v_stateMachine.v_fullSetup.v=0*443149*445848
+LastVerilogToplevel=fullSetup
+ModifyID=159
 Version=74
 
 [~MFT]
-0=13|0RippleCounter.mgf|280302|150903
-1=18|1RippleCounter.mgf|506530|492869
-3=36|3RippleCounter.mgf|104892|100565
+0=18|0RippleCounter.mgf|445848|221305
+1=28|1RippleCounter.mgf|962601|941332
+3=56|3RippleCounter.mgf|206677|200917
 
 [$root]
-A/$root=22|||1*494668
-BinW64/$root=3*101988
-SLP=3*102103
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c9216d9580bc147b0cf073ab05ecb882c9dbf
+A/$root=22|||1*943131
+BinW64/$root=3*202340
+SLP=3*202455
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c73a565f2ade592f8ac1c68f484c9216947c80adfcfa01f676abb8caa434ed8f
 
 [DDFStatic]
 BinW64/DDFStatic=3*80965
@@ -44,18 +51,18 @@ SLP=3*81084
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|0f8c175d59c4b290993e2003f7e7975c506916efab5d3f82c082fe588407fab4068aa0a1ea49f428d4dc206355049fc8
 
 [DFF]
-A/DFF=22|../src/DFF.v|27|1*496110
-BinW64/DFF=3*102420
+A/DFF=22|../src/DFF.v|27|1*944589
+BinW64/DFF=3*202772
 R=../src/DFF.v|27
-SLP=3*102533
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|44300fc340e3bc7a054c52d81b175af66ce43e563b6a79edb9e2708d98c3756c
+SLP=3*202885
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|44300fc340e3bc7a054c52d81b175af6782822c20f7bc8cdf75e7fdade8906d6
 
 [DFFStatic]
-A/DFFStatic=22|../src/DFFStatic.v|27|1*500836
-BinW64/DFFStatic=3*103127
+A/DFFStatic=22|../src/DFFStatic.v|27|1*949315
+BinW64/DFFStatic=3*203479
 R=../src/DFFStatic.v|27
-SLP=3*103246
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a9a189a2dc0214ce6917261ec0b1be141092d539e99e7b6753efd99c3dfd473a2c879bf0b1fa5d80c865147a359233fd
+SLP=3*203598
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a9a189a2dc0214ce6917261ec0b1be141092d539e99e7b6753efd99c3dfd473a97aaae0cd8ead390557fc9abd5030d15
 
 [DFlipFlop]
 BinW64/DFlipFlop=3*19408
@@ -70,11 +77,11 @@ SLP=3*20241
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|9591d94ee894637eadfbd1ca7320b11a4a18460051294d405559e2c02b8bc210
 
 [DLatchStatic]
-A/DLatchStatic=22|../src/DLatchStatic.v|27|1*504885
-BinW64/DLatchStatic=3*104529
+A/DLatchStatic=22|../src/DLatchStatic.v|27|1*953364
+BinW64/DLatchStatic=3*204881
 R=../src/DLatchStatic.v|27
-SLP=3*104651
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|1bb9c4478f5e417f4af063860b7a4cc87385c5adb482fde1c0cddd91f90df9e67d8cfea7cf60c4008fc418be8e835918
+SLP=3*205003
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|1bb9c4478f5e417f4af063860b7a4cc87385c5adb482fde1c0cddd91f90df9e6abd2a887aa26bd3e9b5bf800aab5c19b
 
 [DLatchWRST]
 A/DLatchWRST=22|../src/DLatch.v|55|1*101599
@@ -90,11 +97,11 @@ SLP=3*20475
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|6bc7c6833bc082b0e88f8696770291aef23a9d1daecc045d91849ae092a1d32f66e73c376ab10f85f5958541717b13b0
 
 [TFF]
-A/TFF=22|../src/TFF.v|27|1*499736
-BinW64/TFF=3*102902
+A/TFF=22|../src/TFF.v|27|1*948215
+BinW64/TFF=3*203254
 R=../src/TFF.v|27
-SLP=3*103015
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|2622aa158ee4e9853a9e4894b563d2d58fc7289c3991132363ae1a879a01b7eb
+SLP=3*203367
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|2622aa158ee4e9853a9e4894b563d2d5137ad194e7c3e975bfdf1aa5a603bf0f
 
 [TFlipFlop]
 BinW64/TFlipFlop=3*19889
@@ -103,47 +110,87 @@ SLP=3*20008
 Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|05e72ff4eac59bec0c0e17248c2655b5a30025de53f2eeed202138bbfcd65f14468ab4c864dab4eee08b907981818ea5
 
 [\10BitRippleCounter\\ \]
-A/\10BitRippleCounter\\ \=22|../src/10BitRippleCounter.v|27|1*502213
-BinW64/\10BitRippleCounter\\ \=3*103370
+A/\10BitRippleCounter\\ \=22|../src/10BitRippleCounter.v|27|1*950692
+BinW64/\10BitRippleCounter\\ \=3*203722
 R=../src/10BitRippleCounter.v|27
-SLP=3*104059
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|40002b05f4715cc6536e83afbe87c3be5909e784f6d56d919c71f1608d8044ad26527262ddaa47cb266f3a3c4d9b973a5150448b3548a2faacfa41c27f0a61d1
+SLP=3*204411
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|40002b05f4715cc6536e83afbe87c3be5909e784f6d56d919c71f1608d8044ad26527262ddaa47cb266f3a3c4d9b973ad3a83285c7461ad6bd211f1978a9f0f1
 
 [clockedInverter]
-A/clockedInverter=22|../src/clockedInverter.v|27|1*497951
-BinW64/clockedInverter=3*102648
+A/clockedInverter=22|../src/clockedInverter.v|27|1*946430
+BinW64/clockedInverter=3*203000
 R=../src/clockedInverter.v|27
-SLP=3*102773
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|78ab036b9e2c902ebb805a5e05589f435f73427f9a1950982c5ea50fbd28d5fd14e650f55aeacde28a942f74b802f2aa
+SLP=3*203125
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|78ab036b9e2c902ebb805a5e05589f435f73427f9a1950982c5ea50fbd28d5fd4ff2d58669cfbdaec931ca03e24ce50d
+
+[comb]
+A/comb=22|../src/comb.v|27|1*957195
+BinW64/comb=3*205573
+R=../src/comb.v|27
+SLP=3*205918
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|82019f8357f753158993f7e9e4909385a7203fa9c4d6c80f0c99127eba347e5a
+
+[fullSetup]
+A/fullSetup=22|../src/fullSetup.v|27|1*962601
+BinW64/fullSetup=3*206558
+R=../src/fullSetup.v|27
+SLP=3*206677
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|bb321aa4748ba4e370c244d60f246c7e2ebceee3d4ef06b5dd57924db35a106e12e1395101482788525e41dbbc3b8a47
 
 [nand3]
-A/nand3=22|../src/nand3.v|27|1*506530
-BinW64/nand3=3*104777
+A/nand3=22|../src/nand3.v|27|1*955009
+BinW64/nand3=3*205129
 R=../src/nand3.v|27
-SLP=3*104892
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|303e42451ebcdfc4006dd5522b6b7265560bf86f772f30f23c428e788fead7db
+SLP=3*205244
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|303e42451ebcdfc4006dd5522b6b7265c4a502116ce897bf66e6f0ae9756e3b5
+
+[orWnand]
+A/orWnand=22|../src/orWnand.v|27|1*959141
+BinW64/orWnand=3*206085
+R=../src/orWnand.v|27
+SLP=3*206202
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|813e919423a018235d2f233d4485ca5926527262ddaa47cb266f3a3c4d9b973a4064e19b8fc0321265bb36c8826a349b
+
+[stateMachine]
+A/stateMachine=22|../src/stateMachine.v|27|1*960303
+BinW64/stateMachine=3*206310
+R=../src/stateMachine.v|27
+SLP=3*206432
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|ad39ca2217eb7346195a20b5a9a13475f3b4d8e1412b9e325df0f59210f3c51d87ed53bec0abaa822785324e0023ca9d
+
+[timer]
+A/timer=22|../src/timer.v|27|1*956093
+BinW64/timer=3*205353
+R=../src/timer.v|27
+SLP=3*205468
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|c2ae8f0b7b95b6d69da7be83d99f8f49f682782d0f87dd86c3a78326a12c556f
 
 [trnsGate]
-A/trnsGate=22|../src/trnsGate.v|27|1*495074
-BinW64/trnsGate=3*102187
+A/trnsGate=22|../src/trnsGate.v|27|1*943553
+BinW64/trnsGate=3*202539
 R=../src/trnsGate.v|27
-SLP=3*102305
-Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a126d65bb48cb4945d65d676e5892e67ac231554c83af0a541f45e3f1a4a8147df16b92b38d7881bb001970b1f974420
+SLP=3*202657
+Version=17.0.292.10043 (Windows64)|0000000b789cd3f53752d02d2e33ca3632060010ad02e7|a126d65bb48cb4945d65d676e5892e67ac231554c83af0a541f45e3f1a4a8147acb99f89d43fe5f3bd75b0829cfc4a21
 
 [~U]
-$root=12|0*276212|
+$root=12|0*439686|
 DDFStatic=12|0*234605||0x10
-DFF=12|0*276739|
-DFFStatic=12|0*277442|
+DFF=12|0*440261|
+DFFStatic=12|0*440964|
 DFlipFlop=12|0*59148|
 DLatch=12|0*59839|
-DLatchStatic=12|0*277969|
+DLatchStatic=12|0*441491|
 DLatchWRST=12|0*59388|
 RippleCounter=12|0*60039||0x10
-TFF=12|0*277204|
+TFF=12|0*440726|
 TFlipFlop=12|0*59604|
-\10BitRippleCounter\\ \=12|0*277693||0x10
-clockedInverter=12|0*276987|
-nand3=12|0*278197|
-trnsGate=12|0*276538|
+\10BitRippleCounter\\ \=12|0*441215|
+clockedInverter=12|0*440509|
+comb=12|0*442161|
+fullSetup=12|0*442863||0x10
+nand3=12|0*441719|
+orWnand=12|0*442403|
+stateMachine=12|0*442594|
+timer=12|0*441913|
+trnsGate=12|0*440060|
                                                         

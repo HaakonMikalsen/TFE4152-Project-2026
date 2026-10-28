@@ -1,433 +1,121 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DDFStatic.v
-# Info: VCP2876 DDFStatic.v : (54, 23): Implicit net declaration, symbol C_NCLK_RESET has not been declared in module DDFStatic.
-# Unit top modules: \10BitRippleCounter\ DDFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/DDFStatic.v
-# Info: VCP2876 DDFStatic.v : (54, 23): Implicit net declaration, symbol C_NCLK_RESET has not been declared in module DDFStatic.
-# Unit top modules: DDFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/DDFStatic.v
-# Info: VCP2876 DDFStatic.v : (54, 23): Implicit net declaration, symbol C_NCLK_RESET has not been declared in module DDFStatic.
-# Unit top modules: DDFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +w_nets +access +r +access +r+w DDFStatic
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.2 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.7 [s]
-# SLP: Finished : 1.0 [s]
-# SLP: 6 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 9 (90.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 1.0 [s].
-# KERNEL: SLP loading done - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5304 kB (elbread=427 elab2=4806 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  11:44, søndag 25. oktober 2026
-#  Simulation has been initialized
-# add wave -noreg {/DDFStatic/CLK}
-# add wave -noreg {/DDFStatic/D}
-# add wave -noreg {/DDFStatic/R_N}
-# add wave -noreg {/DDFStatic/Q}
-# add wave -noreg {/DDFStatic/Q_N}
-# VSIM: 5 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# KERNEL: Error: KERNEL_0205 Cannot find object "/\10BitRippleCounter\\ \/CLK".
-# VSIM: Error: Cannot force signal "/\10BitRippleCounter\\ \/CLK" with formula "0 0fs, 1 500ns -r 1us".
-# KERNEL: Error: KERNEL_0205 Cannot find object "/\10BitRippleCounter\\ \/R_N".
-# VSIM: Error: Cannot force signal "/\10BitRippleCounter\\ \/R_N" with formula "1 0fs, 0 12us".
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run @2000ns
-# KERNEL: stopped at time: 2 us
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DDFStatic.v $dsn/src/DLatchStatic.v
-# Info: VCP2876 DDFStatic.v : (54, 23): Implicit net declaration, symbol C_NCLK_RESET has not been declared in module DDFStatic.
-# Info: VCP2876 DLatchStatic.v : (53, 22): Implicit net declaration, symbol C_NEN_RESET has not been declared in module DLatchStatic.
-# Unit top modules: \10BitRippleCounter\ DDFStatic DLatchStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/DFFStatic.v
-# Unit top modules: DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/DFFStatic.v
-# Unit top modules: DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Design unit "DDFStatic" not found in searched libraries: RippleCounter.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v
-# Info: VCP2876 DLatchStatic.v : (53, 22): Implicit net declaration, symbol C_NEN_RESET has not been declared in module DLatchStatic.
-# Unit top modules: \10BitRippleCounter\ DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Design unit "DDFStatic" not found in searched libraries: RippleCounter.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +w_nets +access +r +access +r+w DFFStatic
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.2 [s]
-# SLP: 12 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 26 (92.86%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4807 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  11:53, søndag 25. oktober 2026
-#  Simulation has been initialized
-# add wave -noreg {/DFFStatic/CLK}
-# add wave -noreg {/DFFStatic/CLK_N}
-# add wave -noreg {/DFFStatic/D}
-# add wave -noreg {/DFFStatic/R_N}
-# add wave -noreg {/DFFStatic/Q}
-# add wave -noreg {/DFFStatic/Q_N}
-# VSIM: 6 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# KERNEL: Error: KERNEL_0205 Cannot find object "/DDFStatic/CLK".
-# VSIM: Error: Cannot force signal "/DDFStatic/CLK" with formula "0 0fs, 1 100ns -r 200ns".
-# KERNEL: Error: KERNEL_0205 Cannot find object "/DDFStatic/D".
-# VSIM: Error: Cannot force signal "/DDFStatic/D" with formula "0 0fs, 1 50ns -r 100ns".
-# KERNEL: Error: KERNEL_0205 Cannot find object "/DDFStatic/R_N".
-# VSIM: Error: Cannot force signal "/DDFStatic/R_N" with formula "0 0fs, 1 1us".
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run @2000ns
-# KERNEL: stopped at time: 2 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 12 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 26 (92.86%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4807 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  11:55, søndag 25. oktober 2026
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run @2000ns
-# KERNEL: stopped at time: 2 us
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v
-# Info: VCP2876 DLatchStatic.v : (53, 22): Implicit net declaration, symbol C_NEN_RESET has not been declared in module DLatchStatic.
-# Unit top modules: \10BitRippleCounter\ DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/nand3.v
-# Unit top modules: nand3.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +w_nets +access +r +access +r+w nand3
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 2 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 5 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5303 kB (elbread=427 elab2=4806 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:06, søndag 25. oktober 2026
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# WAVEFORM: Warning: Object matching "/DFFStatic/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/CLK_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/D" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/Q" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/Q_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# add wave -noreg {/nand3/D1}
-# add wave -noreg {/nand3/D2}
-# add wave -noreg {/nand3/D3}
-# add wave -noreg {/nand3/Q}
-# VSIM: 4 object(s) traced.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
-# Unit top modules: \10BitRippleCounter\ DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
-# Unit top modules: \10BitRippleCounter\ DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +w_nets +access +r +access +r+w DLatchStatic
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 6 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 13 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5304 kB (elbread=427 elab2=4807 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet2" has been made inactive.
-#  12:11, søndag 25. oktober 2026
-#  Simulation has been initialized
-# add wave -noreg {/DLatchStatic/EN}
-# add wave -noreg {/DLatchStatic/D}
-# add wave -noreg {/DLatchStatic/R_N}
-# add wave -noreg {/DLatchStatic/Q}
-# add wave -noreg {/DLatchStatic/Q_N}
-# VSIM: 5 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-run @2000ns
-# KERNEL: stopped at time: 2 us
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
-# Unit top modules: \10BitRippleCounter\ DFFStatic.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-asim -O5 +access +w_nets +access +r +access +r+w DFFStatic
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 12 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 34 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:17, søndag 25. oktober 2026
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# WAVEFORM: Warning: Object matching "/DLatchStatic/EN" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DLatchStatic/D" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DLatchStatic/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DLatchStatic/Q" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DLatchStatic/Q_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# add wave -noreg {/DFFStatic/CLK}
-# add wave -noreg {/DFFStatic/CLK_N}
-# add wave -noreg {/DFFStatic/D}
-# add wave -noreg {/DFFStatic/R_N}
-# add wave -noreg {/DFFStatic/Q}
-# add wave -noreg {/DFFStatic/Q_N}
-# VSIM: 6 object(s) traced.
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run @2000ns
-# KERNEL: stopped at time: 2 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 12 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 34 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:18, søndag 25. oktober 2026
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run @2000ns
-# KERNEL: stopped at time: 2 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 12 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 34 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:19, søndag 25. oktober 2026
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run @2000ns
-# KERNEL: stopped at time: 2 us
-run @3.1us
-# KERNEL: stopped at time: 3100 ns
 alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
 # Unit top modules: \10BitRippleCounter\.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v
+# Unit top modules: timer.
 # Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # done
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
-# Unit top modules: \10BitRippleCounter\.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# Stimuli: Info: The stimuli set "StimuliSet3" has been made active.
-# KERNEL: Error: KERNEL_0205 Cannot find object "/nand3/D1".
-# VSIM: Error: Cannot force signal "/nand3/D1" with formula "0 0fs, 1 50ns -r 100ns".
-# KERNEL: Error: KERNEL_0205 Cannot find object "/nand3/D2".
-# VSIM: Error: Cannot force signal "/nand3/D2" with formula "0 0fs, 1 100ns -r 200ns".
-# KERNEL: Error: KERNEL_0205 Cannot find object "/nand3/D3".
-# VSIM: Error: Cannot force signal "/nand3/D3" with formula "0 0fs, 1 200ns -r 400ns".
-# Stimuli: Info: The stimuli set "StimuliSet2" has been made active.
+asim -O5 +access +w_nets +access +r +access +r+w {\10BitRippleCounter\\ \}
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.7 [s]
+# SLP: Finished : 2.2 [s]
+# SLP: 122 (98.39%) primitives and 2 (1.61%) other processes in SLP
+# SLP: 0 signals in SLP and 408 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.4 [s].
+# KERNEL: SLP loading done - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  11:57, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w timer
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 123 (98.40%) primitives and 2 (1.60%) other processes in SLP
+# SLP: 0 signals in SLP and 413 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4832 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+#  11:57, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# add wave -noreg {/timer/CLK}
+# add wave -noreg {/timer/T}
+# add wave -noreg {/timer/R_N}
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run @1.5 s
+# KERNEL: stopped at time: 1500 ms
+# add wave -noreg {/timer/Q8}
+# add wave -noreg {/timer/Q9}
+# VSIM: 2 object(s) traced.
+run @2000000us
+# KERNEL: stopped at time: 2 sec
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 123 (98.40%) primitives and 2 (1.60%) other processes in SLP
+# SLP: 0 signals in SLP and 413 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4832 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:03, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @2.5 s
+# KERNEL: stopped at time: 2500 ms
+run @3000000.1us
+# KERNEL: stopped at time: 3000000100 ns
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +w_nets +access +r +access +r+w {\10BitRippleCounter\\ \}
@@ -443,49 +131,274 @@ asim -O5 +access +w_nets +access +r +access +r+w {\10BitRippleCounter\\ \}
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Create instances complete.
 # SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 122 (100.00%) primitives and 0 other processes in SLP
+# SLP: Finished. Using existing simulator library
+# SLP: 122 (98.39%) primitives and 2 (1.61%) other processes in SLP
 # SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5331 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-#  12:22, søndag 25. oktober 2026
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:05, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-# WAVEFORM: Warning: Object matching "/DFFStatic/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/CLK_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/D" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/Q" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
-# WAVEFORM: Warning: Object matching "/DFFStatic/Q_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/T" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/Q8" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/Q9" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/\10BitRippleCounter\\ \/Q8}
+# add wave -noreg {/\10BitRippleCounter\\ \/Q9}
+# add wave -noreg {/\10BitRippleCounter\\ \/R_N}
+# add wave -noreg {/\10BitRippleCounter\\ \/CLK}
+# VSIM: 4 object(s) traced.
+# KERNEL: Error: KERNEL_0205 Cannot find object "/timer/CLK".
+# VSIM: Error: Cannot force signal "/timer/CLK" with formula "0 0fs, 1 1ms -r 2ms".
+# KERNEL: Error: KERNEL_0205 Cannot find object "/timer/R_N".
+# VSIM: Error: Cannot force signal "/timer/R_N" with formula "0 0fs, 1 1sec".
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
 # add wave -noreg {/\10BitRippleCounter\\ \/Q}
 # VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/Q8}
-# VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/Q9}
-# VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/R_N}
-# VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/R}
-# VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/CLK}
-# VSIM: 1 object(s) traced.
-# add wave -noreg {/\10BitRippleCounter\\ \/CLK_N}
-# VSIM: 1 object(s) traced.
-run @10 us
-# KERNEL: stopped at time: 10 us
-# add wave -noreg {/\10BitRippleCounter\\ \/R_N}
-# KERNEL: Warning: KERNEL_0291 Object "/\10BitRippleCounter\\ \/R_N" has already been traced.
-# VSIM: 0 object(s) traced.
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v
+# Unit top modules: timer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run @3 s
+# KERNEL: stopped at time: 3 sec
+# KERNEL: Error: KERNEL_0205 Cannot find object "/timer/CLK".
+# VSIM: Error: Cannot force signal "/timer/CLK" with formula "0 0fs, 1 976562500ps -r 1953125ns".
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.3 [s]
+# SLP: Finished : 1.9 [s]
+# SLP: 122 (98.39%) primitives and 2 (1.61%) other processes in SLP
+# SLP: 0 signals in SLP and 408 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:11, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# KERNEL: Error: KERNEL_0205 Cannot find object "/timer/CLK".
+# VSIM: Error: Cannot force signal "/timer/CLK" with formula "0 0fs, 1 976562500ps -r 1953125ns".
+# KERNEL: Error: KERNEL_0205 Cannot find object "/timer/R_N".
+# VSIM: Error: Cannot force signal "/timer/R_N" with formula "0 0fs, 1 1sec".
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @3 s
+# KERNEL: stopped at time: 3 sec
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w timer
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/timer.v
+# Unit top modules: timer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.8 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 123 (98.40%) primitives and 2 (1.60%) other processes in SLP
+# SLP: 0 signals in SLP and 413 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.9 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4832 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:12, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# WAVEFORM: Warning: Object matching "/\10BitRippleCounter\\ \/Q8" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/\10BitRippleCounter\\ \/Q9" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/\10BitRippleCounter\\ \/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/\10BitRippleCounter\\ \/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/\10BitRippleCounter\\ \/Q" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/timer/CLK}
+# add wave -noreg {/timer/T}
+# add wave -noreg {/timer/R_N}
+# add wave -noreg {/timer/Q8}
+# add wave -noreg {/timer/Q9}
+# VSIM: 5 object(s) traced.
+# KERNEL: Error: KERNEL_0205 Cannot find object "/\10BitRippleCounter\\ \/CLK".
+# VSIM: Error: Cannot force signal "/\10BitRippleCounter\\ \/CLK" with formula "0 0fs, 1 976562500ps -r 1953125ns".
+# KERNEL: Error: KERNEL_0205 Cannot find object "/\10BitRippleCounter\\ \/R_N".
+# VSIM: Error: Cannot force signal "/\10BitRippleCounter\\ \/R_N" with formula "0 0fs, 1 1sec".
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run @3 s
+# KERNEL: stopped at time: 3 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Error: VCP2000 comb.v : (50, 7): Syntax error. Unexpected token: or[_OR].
+# Error: VCP1041 orWnand.v : (21, 11): Compiler directive `timescale is not allowed inside a module. Use "-err VCP1041 W1" to suppress this error.
+# Error: VCP2570 orWnand.v : (29, 7): Undefined port: A.
+# Error: VCP2570 orWnand.v : (31, 7): Undefined port: B.
+# Error: VCP2570 orWnand.v : (33, 8): Undefined port: Q.
+# Error: VCP2000 orWnand.v : (41, 9): Syntax error. Unexpected token: (.
+# Error: VCP2000 orWnand.v : (41, 15): Syntax error. Unexpected token: ).
+# Compile failure 7 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/comb.v
+# Error: VCP2000 comb.v : (50, 7): Syntax error. Unexpected token: or[_OR].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/comb.v
+# Error: VCP2000 comb.v : (50, 7): Syntax error. Unexpected token: or[_OR].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/comb.v
+# Unit top modules: comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/orWnand.v
+# Error: VCP2000 orWnand.v : (41, 9): Syntax error. Unexpected token: (.
+# Error: VCP2000 orWnand.v : (41, 15): Syntax error. Unexpected token: ).
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/orWnand.v
+# Error: VCP2000 orWnand.v : (41, 9): Syntax error. Unexpected token: (.
+# Error: VCP2000 orWnand.v : (41, 15): Syntax error. Unexpected token: ).
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/orWnand.v
+# Unit top modules: orWnand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Unit top modules: timer comb orWnand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Unit top modules: timer comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +access +r +access +r+w comb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 7 (77.78%) primitives and 2 (22.22%) other processes in SLP
+# SLP: 0 signals in SLP and 20 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:33, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# WAVEFORM: Warning: Object matching "/timer/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/T" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/Q8" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/timer/Q9" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/comb/H}
+# add wave -noreg {/comb/T}
+# add wave -noreg {/comb/C_MSB}
+# add wave -noreg {/comb/C_LSB}
+# add wave -noreg {/comb/R_N}
+# add wave -noreg {/comb/N_MSB}
+# add wave -noreg {/comb/N_LSB}
+# VSIM: 7 object(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run @800ns
+# KERNEL: stopped at time: 800 ns
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Unit top modules: timer comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:38, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
 restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -498,20 +411,428 @@ restart
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Finished. Using existing simulator library
-# SLP: 122 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:38, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Unit top modules: timer comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @400ns
+# KERNEL: stopped at time: 400 ns
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/comb.v
+# Unit top modules: comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/comb.v
+# Unit top modules: comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v
+# Unit top modules: timer comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:40, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w comb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+#  12:40, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @400ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run @1200ns
+# KERNEL: stopped at time: 1200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5331 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:24, søndag 25. oktober 2026
+#  12:41, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @1200 ns
+# KERNEL: stopped at time: 1200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:42, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+run @800ns
+# KERNEL: stopped at time: 800 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+#  12:42, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @800ns
+# KERNEL: stopped at time: 800 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:42, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @800ns
+# KERNEL: stopped at time: 800 ns
+# add wave -noreg {/comb/P}
+# VSIM: 1 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:43, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @800ns
+# KERNEL: stopped at time: 800 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 9 (81.82%) primitives and 2 (18.18%) other processes in SLP
+# SLP: 0 signals in SLP and 21 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5305 kB (elbread=427 elab2=4808 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:44, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @600ns
+# KERNEL: stopped at time: 600 ns
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Error: VCP2000 stateMachine.v : (56, 11): Syntax error. Unexpected token: SB[_IDENTIFIER].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Error: VCP2505 stateMachine.v : (56, 12): Duplicate identifier: C_LSB.
+# Info: VCP7802 stateMachine.v : (45, 6): ... see previous "C_LSB" declaration.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Warning: VCP2597 stateMachine.v : (47, 1): Some unconnected ports remain at instance: "LSB_REG". Module "DFFStatic" has unconnected port(s) : "Q_N".
+# Warning: VCP2597 stateMachine.v : (58, 1): Some unconnected ports remain at instance: "SB_REG". Module "DFFStatic" has unconnected port(s) : "Q_N".
+# Unit top modules: timer stateMachine.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Unit top modules: timer stateMachine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# add wave -noreg {/stateMachine/CLK}
+# WAVEFORM: Warning: Object matching "/stateMachine/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/stateMachine/H}
+# WAVEFORM: Warning: Object matching "/stateMachine/H" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/stateMachine/T}
+# WAVEFORM: Warning: Object matching "/stateMachine/T" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/stateMachine/P}
+# WAVEFORM: Warning: Object matching "/stateMachine/P" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# add wave -noreg {/stateMachine/R_N}
+# WAVEFORM: Warning: Object matching "/stateMachine/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+asim -O5 +access +w_nets +access +r +access +r+w stateMachine
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 34 (94.44%) primitives and 2 (5.56%) other processes in SLP
+# SLP: 0 signals in SLP and 101 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5310 kB (elbread=427 elab2=4812 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:54, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# add wave -noreg {/stateMachine/CLK}
+# add wave -noreg {/stateMachine/H}
+# add wave -noreg {/stateMachine/T}
+# add wave -noreg {/stateMachine/P}
+# add wave -noreg {/stateMachine/R_N}
+# VSIM: 5 object(s) traced.
+run @1200ns
+# KERNEL: stopped at time: 1200 ns
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Unit top modules: timer stateMachine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 34 (94.44%) primitives and 2 (5.56%) other processes in SLP
+# SLP: 0 signals in SLP and 101 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5310 kB (elbread=427 elab2=4812 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:57, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @1200ns
+# KERNEL: stopped at time: 1200 ns
+# add wave -noreg {/stateMachine/C_LSB}
+# VSIM: 1 object(s) traced.
+# add wave -noreg {/stateMachine/C_MSB}
+# VSIM: 1 object(s) traced.
+# add wave -noreg {/stateMachine/N_LSB}
+# VSIM: 1 object(s) traced.
+# add wave -noreg {/stateMachine/N_MSB}
+# VSIM: 1 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 34 (94.44%) primitives and 2 (5.56%) other processes in SLP
+# SLP: 0 signals in SLP and 101 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5310 kB (elbread=427 elab2=4812 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  12:59, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Unit top modules: timer stateMachine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v
+# Unit top modules: timer stateMachine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
 # Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
 run 100 ns
 # KERNEL: stopped at time: 100 ns
@@ -546,19 +867,23 @@ restart
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Create instances complete.
 # SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 122 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 34 (94.44%) primitives and 2 (5.56%) other processes in SLP
+# SLP: 0 signals in SLP and 101 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5331 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5310 kB (elbread=427 elab2=4812 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:25, søndag 25. oktober 2026
+#  13:00, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
 # Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
@@ -584,18 +909,18 @@ restart
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Finished. Using existing simulator library
-# SLP: 122 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# SLP: 34 (94.44%) primitives and 2 (5.56%) other processes in SLP
+# SLP: 0 signals in SLP and 101 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5331 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5310 kB (elbread=427 elab2=4812 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:26, søndag 25. oktober 2026
+#  13:01, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
 # Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
@@ -611,8 +936,98 @@ run 100 ns
 # KERNEL: stopped at time: 500 ns
 run 100 ns
 # KERNEL: stopped at time: 600 ns
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +w_nets +access +r +access +r+w fullSetup
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 0 signals in SLP and 519 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  13:06, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# WAVEFORM: Warning: Object matching "/stateMachine/CLK" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/H" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/T" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/P" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/R_N" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/C_LSB" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/C_MSB" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/N_LSB" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+# WAVEFORM: Warning: Object matching "/stateMachine/N_MSB" not found in "C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb".
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +access +r +access +r+w fullSetup
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 0 signals in SLP and 519 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+#  13:07, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# add wave -noreg {/fullSetup/H}
+# add wave -noreg {/fullSetup/CLK}
+# add wave -noreg {/fullSetup/P}
+# add wave -noreg {/fullSetup/T}
+# add wave -noreg {/fullSetup/R_N}
+# VSIM: 5 object(s) traced.
+run @3 s
+# KERNEL: stopped at time: 3 sec
 run 100 ns
-# KERNEL: stopped at time: 700 ns
+# KERNEL: stopped at time: 3000000100 ns
+run @20s
+# KERNEL: stopped at time: 20 sec
 restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -625,51 +1040,25 @@ restart
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Finished. Using existing simulator library
-# SLP: 122 (100.00%) primitives and 0 other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 0 signals in SLP and 519 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5331 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:26, søndag 25. oktober 2026
+#  13:10, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
 # Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run @10us
-# KERNEL: stopped at time: 10 us
-run 100 ns
-# KERNEL: stopped at time: 10100 ns
-run @50us
-# KERNEL: stopped at time: 50 us
-run @100us
-# KERNEL: stopped at time: 100 us
-alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v
-# Unit top modules: \10BitRippleCounter\.
+run @20s
+# KERNEL: stopped at time: 20 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
 # Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # done
 restart
@@ -686,24 +1075,288 @@ restart
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... done : 0.0 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 122 (98.39%) primitives and 2 (1.61%) other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 158 (97.53%) primitives and 4 (2.47%) other processes in SLP
+# SLP: 0 signals in SLP and 520 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  13:27, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @10s
+# KERNEL: stopped at time: 10 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 0 signals in SLP and 519 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  13:28, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @10s
+# KERNEL: stopped at time: 10 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 0 signals in SLP and 519 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  12:29, søndag 25. oktober 2026
+#  13:30, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
-run @100 us
-# KERNEL: stopped at time: 100 us
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run @10s
+# KERNEL: stopped at time: 10 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run 100 ns
+# KERNEL: stopped at time: 10000000100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: SLP_0011 stateMachine.v (48): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/LSB_REG".
+# SLP: Warning: SLP_0011 stateMachine.v (61): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/MSB_REG".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 2 (0.38%) signals in SLP and 519 (99.62%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  14:25, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @10s
+# KERNEL: stopped at time: 10 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: SLP_0011 stateMachine.v (48): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/LSB_REG".
+# SLP: Warning: SLP_0011 stateMachine.v (61): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/MSB_REG".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 177 (97.79%) primitives and 4 (2.21%) other processes in SLP
+# SLP: 42 (8.22%) signals in SLP and 469 (91.78%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  15:17, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @10s
+# KERNEL: stopped at time: 10 sec
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 177 (97.79%) primitives and 4 (2.21%) other processes in SLP
+# SLP: 42 (8.22%) signals in SLP and 469 (91.78%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  15:18, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+run @20s
+# KERNEL: stopped at time: 20 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 177 (97.79%) primitives and 4 (2.21%) other processes in SLP
+# SLP: 42 (8.22%) signals in SLP and 469 (91.78%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  15:19, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run @20s
+# KERNEL: stopped at time: 20 sec
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: SLP_0011 stateMachine.v (48): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/LSB_REG".
+# SLP: Warning: SLP_0011 stateMachine.v (61): Length of connection (32) does not match the length of port "R_N" (1) on instance "/fullSetup/sm1/MSB_REG".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 2 (0.38%) signals in SLP and 519 (99.62%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  15:19, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+run @20s
+# KERNEL: stopped at time: 20 sec
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
 restart
 # ELBREAD: Elaboration process.
@@ -717,23 +1370,52 @@ restart
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Finished. Using existing simulator library
-# SLP: 122 (98.39%) primitives and 2 (1.61%) other processes in SLP
-# SLP: 0 signals in SLP and 408 (100.00%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 2 (0.38%) signals in SLP and 519 (99.62%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5332 kB (elbread=430 elab2=4831 kernel=70 sdf=0)
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
-#  12:29, søndag 25. oktober 2026
+#  15:20, tirsdag 27. oktober 2026
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
 # Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run @200us
-# KERNEL: stopped at time: 200 us
-run @300.1us
-# KERNEL: stopped at time: 300100 ns
+run @20 s
+# KERNEL: stopped at time: 20 sec
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 157 (97.52%) primitives and 4 (2.48%) other processes in SLP
+# SLP: 2 (0.38%) signals in SLP and 519 (99.62%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5340 kB (elbread=431 elab2=4838 kernel=70 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\hakmi\Documents\TFE4152-Project-2026\activeHDLFiles\TFE4152Project\RippleCounter\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  15:20, tirsdag 27. oktober 2026
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/hakmi/Documents/TFE4152-Project-2026/activeHDLFiles/TFE4152Project/RippleCounter/src/wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k23 -work RippleCounter $dsn/src/trnsGate.v $dsn/src/DFF.v $dsn/src/clockedInverter.v $dsn/src/TFF.v $dsn/src/10BitRippleCounter.v $dsn/src/DLatchStatic.v $dsn/src/DFFStatic.v $dsn/src/nand3.v $dsn/src/timer.v $dsn/src/comb.v $dsn/src/orWnand.v $dsn/src/stateMachine.v $dsn/src/fullSetup.v
+# Unit top modules: fullSetup.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @20 s
+# KERNEL: stopped at time: 20 sec

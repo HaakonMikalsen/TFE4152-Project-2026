@@ -1,17 +1,22 @@
-Active-HDL 17.0.292.10043 2026-10-25 12:29:42
+Active-HDL 17.0.292.10043 2026-10-27 15:20:30
 
 Elaboration top modules:
-Verilog Module                \10BitRippleCounter\\ \
+Verilog Module                fullSetup
 
 
 --------------------------------------------------------------------------------------------------
 Verilog Module          | Library       | Info | Compiler Version           | Compilation Options
 --------------------------------------------------------------------------------------------------
+fullSetup               | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+timer                   | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+stateMachine            | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 \10BitRippleCounter\\ \ | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 TFF                     | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 DFFStatic               | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 DLatchStatic            | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 nand3                   | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+comb                    | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
+orWnand                 | RippleCounter |      | 17.0.292.10043 (Windows64) | -O2 -sv2k23
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
