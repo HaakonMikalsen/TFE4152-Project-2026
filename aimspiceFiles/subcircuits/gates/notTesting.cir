@@ -1,0 +1,57 @@
+[aimspice]
+[description]
+891
+Not Test IMPLEMENTATION
+
+.include ..\..\params\params.inc
+.include ..\..\transistorModels\p18_model_card.inc
+.include ..\..\transistorModels\p18_cmos_models_SS.inc
+
+.param min = 0.18U
+.param scale = 1
+.param size = {min*scale}
+
+* Params NMOS
+.param L_NAND_NMOS = {size }
+.param W_NAND_NMOS = {size }
+
+* Params PMOS
+.param L_NAND_PMOS = {size }
+.param W_NAND_PMOS = {size }
+	
+
+
+* MN1 DRAIN GATE SOURCE BULKN NMOS L=L_NAND_NMOS W=W_NAND_NMOS
+* MP1 DRAIN GATE SOURCE BULKN PMOS L=L_NAND_PMOS W=W_NAND_PMOS
+
+
+.param VLOW  = {0.25*supplyVoltage}
+.param VHIGH = {0.75*supplyVoltage}
+
+VA A 0 PULSE({VLOW} {VHIGH} 0.2u 12n 17n 0.2u 0.4u)
+
+VDD supply 0 dc {supplyVoltage}
+
+MP1 Y A supply supply PMOS L=L_NAND_PMOS W=W_NAND_PMOS
+
+
+MN1 Y A 0 0 NMOS L=L_NAND_NMOS W=W_NAND_NMOS
+
+
+
+.plot v(Y)
+.plot v(A)
+*.plot I(VDD)
+*.plot v(supply)
+*.plot v(s1)
+*.plot v(0)
+
+[tran]
+0.01u
+2u
+0
+0.01u
+0
+[ana]
+4 0
+[end]
